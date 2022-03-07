@@ -11,6 +11,12 @@ class Foo {
             FooData::age to setOf(1, 2, 3)
         )
 
+        val filter2 = listOf(FooData::name, FooData::age)
+        println(filter2)
+
+        val att = FooData::name
+        println(att)
+
         return doSomething(filter)
     }
 }
